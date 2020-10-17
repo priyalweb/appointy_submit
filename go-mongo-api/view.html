@@ -1,0 +1,8 @@
+<h1>{{.Title}}</h1>
+
+<p>[<a href="/edit/{{.Title}}">edit</a>]</p>
+<div><input type="text" name="name" sixe="80">{{printf "%s" .name}}</div>
+<div><input type="text" name="email" sixe="80">{{printf "%s" .email}}</div>
+<div><input type="text" name="rsvp" sixe="80">{{printf "%s" .rsvp}}</div>
+
+<div>{{printf "%s" .Body}}</div>

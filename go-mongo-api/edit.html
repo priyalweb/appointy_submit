@@ -1,0 +1,13 @@
+<h1>Editing {{.Title}}</h1>
+
+<form action="/save/{{.Title}}" method="POST">
+<div><input type="text" name="id" sixe="80">{{printf "%s" .ID}}</div>
+<div><input type="text" name="title" sixe="80">{{printf "%s" .Title}}</div>
+<div><input type="text" name="participants" sixe="80">{{printf "%s" .Participants}}</div>
+<div><input type="text" name="startsime" sixe="80">{{printf "%s" .StartTime}}</div>
+<div><input type="text" name="endsime" sixe="80">{{printf "%s" .EndTime}}</div>
+<div><textarea name="body" rows="20" cols="80">{{printf "%s" .Body}}</textarea></div>
+
+<div><input type="submit" value="Save"></div>
+</form>
+
